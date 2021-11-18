@@ -1,0 +1,34 @@
+[
+  {
+    "CountryName": "USA",
+    "Name": "Detroit"
+  },
+  {
+    "CountryName": "USA",
+    "Name": "Seattle"
+  },
+  {
+    "CountryName": "USA",
+    "Name": "Boston"
+  },
+  {
+    "CountryName": "England",
+    "Name": "London"
+  },
+  {
+    "CountryName": "England",
+    "Name": "Manchester"
+  },
+  {
+    "CountryName": "Australia",
+    "Name": "Sidney"
+  },
+  {
+    "CountryName": "Australia",
+    "Name": "Melbourne"
+  },
+  {
+    "CountryName": "Australia",
+    "Name": "Perth"
+  }
+]

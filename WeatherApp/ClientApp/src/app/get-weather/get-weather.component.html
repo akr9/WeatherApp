@@ -1,0 +1,42 @@
+<h1 id="tableLabel">Get Weather Data</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+<!--<p *ngIf="!data"><em>Loading...</em></p>-->
+
+
+<label>Country : &nbsp;</label>
+<select [(ngModel)]="selectedCountry.name" (change)="onSelectCountry($event.target.value)">
+  <option value="--Select--">--Select--</option>
+  <option *ngFor="let country of countries" value={{country.name}}>{{country.name}}</option>
+</select>
+
+<br />
+<br />
+
+<div>
+  <label>City : &nbsp;</label>
+  <select [(ngModel)]="selectedCity.name" (change)="onSelectCity($event.target.value)">
+    <option value="--Select--">--Select--</option>
+    <option *ngFor="let city of cities " value={{city.name}}>{{city.name}}</option>
+  </select>
+</div>
+
+<br />
+
+<div>
+  <label>Weather : &nbsp;</label>
+  <br />
+  <ul>
+    <li>Location : &nbsp;{{weather.name}}</li>
+    <li>Time : &nbsp;{{weather.time}}</li>
+    <li>Wind : &nbsp;{{weather.wind.speed}}(speed)&nbsp;{{weather.wind.deg}}(direction)&nbsp;{{weather.wind.gust}}(gust)&nbsp;</li>
+    <li>Visibility : &nbsp;{{weather.visibility}}</li>
+    <li>Sky conditions : &nbsp;{{weather.clouds.all}}</li>
+    <li>Temperature (in Celsius) : &nbsp;{{weather.tempcelcius.temp}}</li>
+    <li>Temperature (in Fahrenheit) : &nbsp;{{weather.main.temp}}</li>
+    <li>Dew Point : &nbsp;{{weather.main.humidity}}</li>
+    <li>Relative Humidity : &nbsp;{{weather.main.humidity}}</li>
+    <li>Pressure : &nbsp;{{weather.main.pressure}}</li>
+  </ul>
+</div>
